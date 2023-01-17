@@ -6,7 +6,7 @@ pipeline {
         git url: 'https://github.com/HOPARKSUNG/jen.git', branch: 'main'
       }
     }
-    stage('docker build') {
+    stage('sungho docker build') {
       steps {
         sh '''
         sudo docker build -t rapa.iptime.org:5000/mynginx:latest .
