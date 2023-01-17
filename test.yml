@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: test-pod
-      image: rapa.iptime.org:5000/nginx:sunghoda
+      image: rapa.iptime.org:5000/nginx:sungho
 ---
 apiVersion: v1
 kind: Service
@@ -21,6 +21,6 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30303
+      nodePort: 30001
   type: NodePort
 
