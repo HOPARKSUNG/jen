@@ -9,8 +9,8 @@ pipeline {
     stage('sungho docker build') {
       steps {
         sh '''
-        sudo docker build -t rapa.iptime.org:5000/mynginx:latest .
-        sudo docker push rapa.iptime.org:5000/mynginx:latest
+        sudo docker build -t rapa.iptime.org:5000/nginx:sunghoda .
+        sudo docker push rapa.iptime.org:5000/nginx:sunghoda
         '''
       }
     }
